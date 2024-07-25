@@ -1,0 +1,77 @@
+body {
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url(/Assets/pitch\ bg.jpg );
+  background-size: cover;
+}
+
+.prince {
+  height: 347px;
+  width: 204px;
+  position: absolute;
+  bottom: -60px;
+  left: 10px;
+}
+.playerAni{
+  animation: player 800ms linear  ;
+}
+@keyframes player {
+  0%{
+bottom: -60px;
+  }
+  50%{
+    bottom: 200px;
+  }
+  100%{
+    bottom: -60px;
+  }
+}
+.gameOver{
+  visibility: hidden;
+  color: white;
+  display: block;
+ position: absolute;
+ top: 20%;
+ left: 40%;
+ width: 50%;
+ font-size: 53px;
+
+}
+.scorecont{
+  visibility: visible;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 33%;
+  left: 39%;
+ width: 80%;
+ font-size: 53px;
+
+}
+.books {
+  height: 169px;
+  width: 142px;
+  position: absolute;
+  bottom: 0px;
+  left: 59%;
+ 
+}
+.obsanimation{
+    animation: books 3s 1s infinite  ease-in-out;
+}
+@keyframes books {
+    0%{
+left: 120%;
+    }
+    
+    100%{
+        left: -200px;
+    }
+}
